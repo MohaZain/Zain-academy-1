@@ -7,7 +7,7 @@ import os
 # database_name = "zacademy"
 # database_path = "postgresql://{}/{}".format('localhost:5432', database_name)
 # = "postgresql://localhost:5432/zacademy"
-database_path = os.environ['DATABASE_URL'] = 'postgres://bohokpmskoohzh:7cffa0bd883997b0826480bb026be8e73ddf49917ab170c62298cdf97feccd0f@ec2-18-235-45-217.compute-1.amazonaws.com:5432/dcs3a64p6qksk8'
+database_path = os.environ['DATABASE_URL'] = 'postgresql://ujvxkjclrtmyji:ca394ea08e752d105afda1402a94b627c130dfcc0f7ef263b5cdd929fb945f45@ec2-54-236-234-167.compute-1.amazonaws.com:5432/d7ik7isoh6bokr'
 db = SQLAlchemy()
 
 '''
