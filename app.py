@@ -247,6 +247,14 @@ def create_app(test_config=None):
             "error": 404,
             "message": "resource not found"
         }), 404
+        
+    @app.errorhandler(405)
+    def not_found(error):
+        return jsonify({
+            "success": False,
+            "error": 404,
+            "message": "Method Not Allowed"
+        }), 405
 
     @app.errorhandler(AuthError)
     def auth_error(error):
