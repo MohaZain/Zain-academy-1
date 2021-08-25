@@ -12,7 +12,7 @@ from urllib.request import urlopen
 AUTH0_DOMAIN = os.environ['AUTH0_DOMAIN'] 
 ALGORITHMS = os.environ['ALGORITHMS'] 
 API_AUDIENCE = os.environ['API_AUDIENCE'] 
-# https://coffehop.eu.auth0.com/authorize?audience=zacademy&response_type=token&client_id=lEcdDlpGzp8ohpt7JKcE8vEZRajvUlri&redirect_uri=http://localhost:5000/token
+# https://coffehop.eu.auth0.com/authorize?audience=zacademy&response_type=token&client_id=lEcdDlpGzp8ohpt7JKcE8vEZRajvUlri&redirect_uri=https://zain-academy-dep.herokuapp.com/
 # AuthError Exception
 '''
 AuthError Exception
