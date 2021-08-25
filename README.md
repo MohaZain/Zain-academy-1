@@ -37,6 +37,19 @@ flask run
 ```
 ### Database Setup
 From the zain-academy-1 folder in terminal run:
+```createdb data_name```
+
+```bash
+python manage.py db init
+python manage.py db migrate
+python manage.py db upgrade
+
+```
+### Authentication
+  **Roles**
+1. **Instructor** 
+2. **admin** 
+>_note_: **I provieded a user token for each roles in token file**
 ```bash
 python manage.py db init
 python manage.py db migrate
