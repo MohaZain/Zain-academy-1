@@ -7,7 +7,9 @@ import os
 # database_name = "zacademy"
 # database_path = "postgresql://{}/{}".format('localhost:5432', database_name)
 # = "postgresql://localhost:5432/zacademy"
-database_path = os.environ['DATABASE_URL'] = 'postgresql://ujvxkjclrtmyji:ca394ea08e752d105afda1402a94b627c130dfcc0f7ef263b5cdd929fb945f45@ec2-54-236-234-167.compute-1.amazonaws.com:5432/d7ik7isoh6bokr'
+
+# NOTE I put the db path here Because i could not modify it in heroku
+database_path = os.environ['DATABASE_URL'] 
 db = SQLAlchemy()
 
 '''
