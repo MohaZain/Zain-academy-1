@@ -252,7 +252,7 @@ def create_app(test_config=None):
     def not_found(error):
         return jsonify({
             "success": False,
-            "error": 404,
+            "error": 405,
             "message": "Method Not Allowed"
         }), 405
 
