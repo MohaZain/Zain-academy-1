@@ -4,7 +4,7 @@ import unittest
 import json
 from flask_sqlalchemy import SQLAlchemy
 from app import create_app
-from models import Course, Instructor, setup_db
+from models import Course, Instructor, setup_db, db_drop_and_create_all
 
 
 class TriviaTestCase(unittest.TestCase):
@@ -55,6 +55,7 @@ class TriviaTestCase(unittest.TestCase):
         }
 
     def tearDown(self):
+        db_drop_and_create_all()
         """Executed after reach test"""
         pass
 
