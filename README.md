@@ -47,7 +47,7 @@ python manage.py db upgrade
 ```
 ### Authentication
   **Roles**
-1. **Instructor**  - Instructor Can Access {post:instructor}  {post:course}
+1. **Instructor**  - Instructor Can Access {post:instructor-course}  {post:course}
 2. **admin**  - Admin Have Access to all endpoint 
 >_note_: **I provieded a user token for each roles in setup.sh **
 
